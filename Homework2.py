@@ -2,9 +2,9 @@
 number = 5
 print(5**2)
 
-number = input("2")
-number = input("4")
-number = input("6")
+number1 = 2
+number2 = 4
+number3 = 6
 average = (2 + 4 + 6) / 3
 print(average)
 
@@ -25,7 +25,11 @@ number2 = 347 % 100
 number3 = 347 % 10
 print(number3)
 
-
+perimeter = 16
+width = 3
+length = 5
+total_perimeter = 2 * (width + length)
+print(total_perimeter)
 
 
 
