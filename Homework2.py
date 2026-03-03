@@ -13,8 +13,8 @@ number1 = 135 // 60
 number2 = 135 % 60
 print(number1,number2)
 
-price = input("1000")
-discont = input("15")
+price = 1000
+discont = 15
 procent = 15 / 100
 total_price = 1000 - (1000 * 15 / 100)
 print(total_price)
@@ -30,6 +30,8 @@ width = 3
 length = 5
 total_perimeter = 2 * (width + length)
 print(total_perimeter)
+
+
 
 
 
