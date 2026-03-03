@@ -19,6 +19,15 @@ procent = 15 / 100
 total_price = 1000 - (1000 * 15 / 100)
 print(total_price)
 
+number = 347
+number1 = 347 // 100
+number2 = 347 % 100
+number3 = 347 % 10
+print(number3)
+
+
+
+
 
 
 
