@@ -1,3 +1,4 @@
+from math import remainder
 
 number = 5
 print(5**2)
@@ -31,6 +32,25 @@ length = 5
 total_perimeter = 2 * (width + length)
 print(total_perimeter)
 
+total_number = 1234
+number1 = 1234 // 1000
+number2 = (1234 // 100) % 10
+number3 = (1234 // 10) % 10
+number4 = 1234 % 10
+print(number1)
+print(number2)
+print(number3)
+print(number4)
+
+total_number = 1234
+n1, remainder = divmod (1234,1000)
+n2, remainder = divmod (1234,100)
+n3, remainder = divmod (1234,10)
+n4, remainder = divmod (1234,5)
+print(n1)
+print(n2)
+print(n3)
+print(n4)
 
 
 
