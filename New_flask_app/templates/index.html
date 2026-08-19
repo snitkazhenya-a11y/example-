@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Головна сторінка{% endblock %}
+
+{% block content %}
+    <h1>Вітаю на моєму веб-сайті!</h1>
+    
+    {% if info %}
+        <h2>Про мене</h2>
+        <p><strong>Ім'я:</strong> {{ info.name }}</p>
+        <p>{{ info.bio }}</p>
+    {% else %}
+        <p>Цей проєкт, написаний мовою Python, перший раз, з використанням фреймворку Flask.</p>
+        <p>Скористайтеся меню вище, щоб переглянути список книг.</p>
+    {% endif %}
+{% endblock %}

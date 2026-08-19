@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Мій Flask Сайт{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        nav a { margin-right: 15px; text-decoration: none; color: #007bff; font-weight: bold; }
+        footer { margin-top: 40px; border-top: 1px solid #ccc; pt-2; font-size: 0.9em; color: #666; }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Головна</a>
+        <a href="/items">Мої книги</a>
+        <a href="/about">Про мене</a>
+    </nav>
+    <hr>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Створено на Flask</p>
+    </footer>
+</body>
+</html>

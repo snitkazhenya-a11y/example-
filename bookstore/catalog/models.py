@@ -32,3 +32,16 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+class Tech(models.Model):
+    name = models.CharField(max_length=200, verbose_name="Назва техніки")
+    category = models.ForeignKey('Category', on_delete=models.CASCADE, verbose_name="Категорія")
+    price = models.DecimalField(max_length=10, decimal_places=2, max_digits=10, verbose_name="Ціна")
+    # додайте інші потрібні поля
+
+    class Meta:
+        verbose_name = "Техніка"
+        verbose_name_plural = "Техніка"
+
+    def __str__(self):
+        return self.name

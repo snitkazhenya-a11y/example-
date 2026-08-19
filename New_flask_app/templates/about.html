@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Про мене{% endblock %}
+
+{% block content %}
+    <h1>Про автора</h1>
+    <img src="{{ url_for('static', filename='AVA.png') }}" alt="Аватар" class="AVA">
+    <p><strong>Ім'я:</strong> {{ user_info.name }}</p>
+    <p><strong>Про себе:</strong> {{ user_info.bio }}</p>
+    <p><strong>Складність:</strong> {{ user_info.difficult }}</p>
+    <p><strong>Коментар:</strong> {{ user_info.coments }}</p>
+{% endblock %}
